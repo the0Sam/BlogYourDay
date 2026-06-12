@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const path = require('path');
+const cors = require('cors');
 
 const userRoutes = require('./routes/userRoutes');
 const vlogRoutes = require('./routes/vlogRoutes');
@@ -16,9 +17,7 @@ mongoose.connect(`${MONGO_URL}`)
 
 app.use(
     cors({
-        origin: [
-            "https://blogyourday-1.onrender.com/"
-        ],
+        origin: ["https://blogyourday-1.onrender.com/"],
         credentials: true
     })
 );

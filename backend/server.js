@@ -7,7 +7,7 @@ const userRoutes = require('./routes/userRoutes');
 const vlogRoutes = require('./routes/vlogRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5001 || 5000;
+const PORT = process.env.PORT ||  5000;
 const MONGO_URL = process.env.MONGO_URL ;
 
 mongoose.connect(`${MONGO_URL}`)

@@ -17,8 +17,7 @@ mongoose.connect(`${MONGO_URL}`)
 
 app.use(
     cors({
-        origin: "https://blogyourday-1.onrender.com",
-        credentials: true
+        origin: "https://blogyourday-1.onrender.com"
     })
 );
 

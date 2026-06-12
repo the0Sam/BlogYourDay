@@ -13,7 +13,7 @@ const MONGO_URL = process.env.MONGO_URL ;
 app.use(
     cors({
         origin: [
-            "https://blogyourday-1.onrender.com/"
+            "https://blogyourday.onrender.com/"
         ],
         credentials: true
     })

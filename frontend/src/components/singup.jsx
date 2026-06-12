@@ -174,7 +174,7 @@ const Singup = () => {
            </fieldset>
           </form>
           <p>
-            Existing User? &rarr; <a href='/login'>Login</a>
+            Existing User? &rarr; <Link to='/login'>Login</Link>
           </p>
         </div>
        </div> 

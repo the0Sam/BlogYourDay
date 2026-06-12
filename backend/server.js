@@ -10,6 +10,15 @@ const app = express();
 const PORT = process.env.PORT ||  5000;
 const MONGO_URL = process.env.MONGO_URL ;
 
+app.use(
+    cors({
+        origin: [
+            "https://blogyourday-1.onrender.com/"
+        ],
+        credentials: true
+    })
+);
+
 mongoose.connect(`${MONGO_URL}`)
     .then(() => console.log('Connected to MongoDB.'))
     .catch(err => console.error('Connection error: ', err));

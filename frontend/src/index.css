@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: Garamond, serif;
+    background: linear-gradient(to top, #efedf9, #d9e4f5);
+    min-height: 100vh;
+}
+
+#root {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}

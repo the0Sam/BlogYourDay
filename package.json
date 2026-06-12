@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-toastify": "^11.0.2",
+    "sweetalert": "^2.1.2"
+  }
+}

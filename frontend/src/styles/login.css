@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Garamond, serif;
+    background: linear-gradient(to top, #efedf9, #d9e4f5);
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    width: 100%;
+
+    
+    transform: translateY(-3.5%);
+    gap: 0;
+    padding: 1rem;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.l-displayimage {
+    height: 30rem;
+    border: 2px solid #ccc;
+    padding: 10px;
+    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.login-formContainer {
+    border: 2px solid #ccc;
+    padding: 2rem; 
+    width: 25rem;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1.1rem;
+    
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FDEBD0;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF8B50;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #ff8a506b;
+}
+
+.login-form fieldset {
+    padding: 8px;
+    margin-top: 8px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 6px;
+}
+
+.login-formContainer p {
+    margin-left: 7%;
+}
+
+.login-formContainer p a {
+    padding: 8px 16px;
+    background-color: #FF8B50;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.login-formContainer p a:hover {
+    background-color: #ff8a506b;
+}
+
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column; /* Stack image and form on smaller screens */
+        width: 95%;
+    }
+
+    .l-displayimage {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        border-bottom: none;
+    }
+
+    .login-formContainer {
+        width: 100%;
+        border-radius: 10px;
+        border-left: none;
+    }
+}
+

@@ -127,7 +127,7 @@ const Login = () => {
             </fieldset>
           </form>
           <p>
-            Create an account with us &rarr; <a href='/signup'>Sign Up</a>
+            Create an account with us &rarr; <Link to='/signup'>Sign Up</Link>
           </p>
         </div>
       </div> 
